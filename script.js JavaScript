@@ -1,0 +1,25 @@
+function calcularEconomia() {
+    const area = parseFloat(document.getElementById('area').value);
+    const fator = parseFloat(document.getElementById('irrigacao').value);
+    
+    if (!area || area <= 0) {
+        document.getElementById('resultado').innerHTML = "Por favor, insira uma área válida.";
+        return;
+    }
+
+    // Consumo médio anual aproximado por hectare (em m³)
+    const consumoConvencional = 8000; // m³ por hectare/ano
+    const consumoAtual = consumoConvencional * fator;
+    const economia = consumoConvencional - consumoAtual;
+    const economiaTotal = (economia * area).toFixed(0);
+
+    document.getElementById('resultado').innerHTML = `
+        Com ${area} hectares, você pode economizar <strong>${economiaTotal} m³</strong> de água por ano!<br>
+        <small>Isso equivale a mais de ${Math.round(economiaTotal / 200)} piscinas olímpicas.</small>
+    `;
+}
+
+// Enter para calcular
+document.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') calcularEconomia();
+});
