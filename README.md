@@ -29,9 +29,8 @@ Demonstrar como pequenas mudanças nas práticas agrícolas, aliadas à tecnolog
 
 ## Como Acessar o Projeto
 Acesse o site publicado no GitHub Pages:  
-**[https://SEU-USUARIO.github.io/agrinho2026](https://SEU-USUARIO.github.io/agrinho2026)**
+**[https://marcos-nogoceke.github.io/agrinho2026/)**
 
-*(Substitua `SEU-USUARIO` pelo seu nome de usuário do GitHub após publicar)*
 
 ## Autor
 - **Nome do aluno:** [Marcos De Brito Nogoceke]  
